@@ -1,0 +1,6 @@
+{
+  "name": "서울정화고Wee클래스",
+  "description": "서울정화고등학교 학생들을 위한 따뜻하고 포근한 상담 예약 및 관리 프로그램",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

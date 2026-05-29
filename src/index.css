@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Gowun+Batang&family=Inter:wght@450;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Ownglyph_ParkDaHyun", "Dear Berry Crispy", "Dear 베리크리스피", "DearBerryCrispy", "Gowun Dodum", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  font-size: 110%;
+}
+
+.kitsch-bubble-title {
+  font-family: 'Cafe24Ssurround', 'Gowun Dodum', "Ownglyph_ParkDaHyun", sans-serif !important;
+  color: #FFA3A6 !important; /* Lovely, softer warm pink with a delicate peach balance, closely matching the counseling button */
+  text-shadow: 
+    0.03em 0.03em 0px #FFFDF5,              /* Cozy warm vanilla custard double-shadow */
+    0.06em 0.06em 0px #FFEBE6,              /* Rich peach cream dimensional background volume */
+    0.08em 0.08em 0.25em rgba(255, 163, 166, 0.22); /* Radiant, soft peach-pink dreamlike aura glow */
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+/* Master Pastel & Lovely Theme Overrides across the entire app */
+.text-\[\#334E52\] {
+  color: #503A36 !important; /* Deep, highly legible sweet chestnut brown (warm, coziest, high-contrast) */
+}
+.text-\[\#4A6D73\] {
+  color: #83665E !important; /* Dreamy medium cozy cinnamon-brown for paragraphs and text */
+}
+.text-\[\#9BBCC2\] {
+  color: #A88E88 !important; /* Beautifully soft toasted-almond and cocoa-dust gray */
+}
+.bg-\[\#EBF4F6\] {
+  background-color: #FDF5EC !important; /* Comforting, delicious warm custard-vanilla cream milk */
+}
+.bg-\[\#EBF4F6\]\/90 {
+  background-color: rgba(253, 245, 236, 0.9) !important;
+}
+.bg-\[\#EBF4F6\]\/80 {
+  background-color: rgba(253, 245, 236, 0.8) !important;
+}
+.bg-\[\#EBF4F6\]\/50 {
+  background-color: rgba(253, 245, 236, 0.5) !important;
+}
+.bg-\[\#D4E9EC\]\/50 {
+  background-color: rgba(252, 231, 215, 0.5) !important; /* Soft warm apricot/peach cream background accent */
+}
+.border-\[\#D4E9EC\] {
+  border-color: #F2DFD3 !important; /* Delicate warm milk tea border */
+}
+.border-\[\#D4E9EC\]\/40 {
+  border-color: rgba(242, 223, 211, 0.4) !important;
+}
+.hover\:border-\[\#D4E9EC\]:hover {
+  border-color: #E9C8B5 !important;
+}
+.hover\:bg-\[\#D4E9EC\]\/50:hover {
+  background-color: rgba(242, 223, 211, 0.18) !important;
+}
+.focus\:ring-\[\#D4E9EC\]:focus {
+  --tw-ring-color: #E9C8B5 !important;
+}
+.focus\:border-\[\#D4E9EC\]:focus {
+  border-color: #DFBDAC !important;
+}
+.shadow-\[\#4A6D73\]\/5 {
+  box-shadow: 0 10px 25px -5px rgba(131, 102, 94, 0.08), 0 8px 10px -6px rgba(131, 102, 94, 0.08) !important;
+}
+
+/* Let's elevate active header items and buttons to a warmer, softer cheerful pink */
+.bg-\[\#FF8E8E\] {
+  background-color: #FFA79E !important; /* Sweet sunset peach-coral pink */
+}
+.bg-\[\#FF8E8E\]\/30 {
+  background-color: rgba(255, 167, 158, 0.3) !important;
+}
+.hover\:bg-\[\#ff7a7a\]:hover {
+  background-color: #FF9288 !important;
+}
+.shadow-\[\#FF8E8E\]\/30 {
+  box-shadow: 0 10px 15px -3px rgba(255, 167, 158, 0.28) !important;
+}
+
+* {
+  font-family: "Ownglyph_ParkDaHyun", "Dear Berry Crispy", "Dear 베리크리스피", "DearBerryCrispy", "Gowun Dodum", "Inter", ui-sans-serif, system-ui, sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.quote-font-style {
+  font-family: "Gowun Batang", "Gowun Dodum", "Inter", serif !important;
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .animate-slideUp {
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
